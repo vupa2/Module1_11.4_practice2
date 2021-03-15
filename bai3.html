@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="vn">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>[*Bài tập] Luyện tập vòng lặp 02</title>
+
+  <style>
+
+  </style>
+</head>
+<body>
+
+  <script>
+    // Hinh 1
+    for (let row = 0; row < 5; row++) {
+      for (let col = 0; col < row + 1; col++) {
+        document.write('*');
+      }
+      document.write('<br>');
+    }
+
+    // Hinh 2
+    document.write('<br>');
+
+    for (let row = 0; row < 5; row++) {
+      for (let col = 5; col > row; col--) {
+        document.write('*');
+      }
+      document.write('<br>');
+    }
+
+    // Hinh 3
+    document.write('<br>');
+
+    for (let row = 0; row < 5; row++) {
+      for (let col = 0; col < 4 - row; col++) {
+        document.write('&nbsp;');
+        document.write('&nbsp;');
+      }
+      for (let col = 0; col < row + 1; col++) {
+        document.write('*')
+      }
+      document.write('<br>');
+    }
+
+    // Hinh 4
+    document.write('<br>');
+
+    for (let row = 0; row < 5; row++) {
+      for (let col = 0; col < row; col++) {
+        document.write('&nbsp;');
+        document.write('&nbsp;');
+      }
+      for (let col = row; col < 5; col++) {
+        document.write('*');
+      }
+      document.write('<br>');
+    }
+  </script>
+</body>
+</html>
